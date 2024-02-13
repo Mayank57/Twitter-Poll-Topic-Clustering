@@ -33,7 +33,9 @@ hence we consider only those texts which have
 been retweeted. Post this, all the texts have been
 cleaned, and then passed to the embeddings func-
 tion.
+
 5.3 Text Embedding
+
 Applied Sentence Transformers, which internally
 use the BERT architecture, to generate embed-
 dings from the resulting texts. This process in-
@@ -43,11 +45,14 @@ ings of the words and sentences. These embed-
 dings were projected onto a 384-dimensional vec-
 tor space. This high-dimensional space allows for
 a detailed representation of the text data.
+
 5.4 Clustering
+
 Clustering is a technique used to group similar
 items together. In this context, it helps to identify
 polls with similar themes or topics.
-5.4.1 K-Means Clustering
+
+K-Means Clustering
 K-Means Clustering is an unsupervised machine
 learning algorithm designed to group data points
 into k clusters based on similarity. The algo-
@@ -63,7 +68,8 @@ about cluster shapes and sizes. The algorithm’s
 success relies on determining an appropriate num-
 ber of clusters (k) and addressing these limitations
 for optimal results.
-5.4.2 Hierarchical Clustering
+
+Hierarchical Clustering
 Hierarchical Clustering organizes data points into
 a tree-like structure, or hierarchy, based on their
 similarities. It does so by iteratively merging or
@@ -74,7 +80,8 @@ tion of the data’s inherent structure and doesn’t
 require specifying the number of clusters before-
 hand, offering flexibility in analysis. We use this
 to introspect the relations between the clusters. We
-use the following algorithms for the same -
+use the following algorithms for the same
+
 Agglomerative Clustering
 Agglomerative Clustering is a bottom-up hier-
 archical clustering algorithm. It starts by consid-
@@ -85,6 +92,7 @@ process continues until a desired number of clus-
 ters is reached. This method is flexible and does
 not require specifying the number of clusters in
 advance.
+
 HDBScan
 Hierarchical Density-Based Spatial Clustering
 of Applications with Noise is a density-based clus-
@@ -96,7 +104,9 @@ mines cluster sizes dynamically and does not re-
 quire specifying the number of clusters before-
 hand. This makes it well-suited for datasets with
 irregular structures and varying cluster densities.
-5.5 Analysis
+
+Analysis
+
 Our main aim is to find order in the chaos, as in
 separating the raw data into meaningful clusters.
 Having separated the data into clusters, and we
