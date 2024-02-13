@@ -10,7 +10,9 @@ these patterns change over time for different
 topics
 
 Techniques and methods
-5.1 Data Preprocessing
+
+Data Preprocessing
+
 As mentioned in Data, we keep Tweets that are pri-
 marily in English and deduplicate. Furthermore,
 we identify columns that are NaN (or any single-
@@ -19,7 +21,9 @@ informative meta-data. In an attempt to incorpor-
 tate the date of posting of the poll, we provide a
 provision to append Timestamp to the poll before
 generating Embeddings.
-5.2 Text Extraction
+
+Text Extraction
+
 Text was extracted from the Twitter polls data for
 analysis. This step involves pulling out the rel-
 evant textual information from the polls, which is
